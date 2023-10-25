@@ -1,0 +1,32 @@
+### ottieni tutti gli autori
+GET http://localhost:3001/api/authors HTTP/1.1
+Content-Type: application/json
+
+### ottieni un autore
+GET http://localhost:3001/api/authors/6536d3bda7b3529d7018fe33 HTTP/1.1
+Content-Type: application/json
+
+### crea un nuovo autore
+POST http://localhost:3001/api/authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Roberta",
+    "cognome": "Rossi",
+    "email": "rob.ross@gmail.com",
+    "data_di_nascita": "1997-03-01",
+    "avatar": "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-avatar-placeholder-abstract-white-blue-green-png-image_3918476.jpg"
+}
+
+### elimina un autore
+DELETE http://localhost:3001/api/authors/1 HTTP/1.1
+
+### modifica un autore
+PUT http://localhost:3001/api/authors/6536d87083123fb688b0730b HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "beppeverdi@yahoo.it"
+}
+
+

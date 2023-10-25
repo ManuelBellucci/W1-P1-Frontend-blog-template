@@ -1,0 +1,61 @@
+{
+  "name": "strive-blog-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "6.1.4",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.5.1",
+    "axios": "^1.5.1",
+    "bootstrap": "5.3.2",
+    "cors": "2.8.5",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "express-validator": "7.0.1",
+    "mongodb": "6.2.0",
+    "mongoose": "7.6.3",
+    "nodemon": "3.0.1",
+    "react": "18.2.0",
+    "react-bootstrap": "2.9.1",
+    "react-dom": "18.2.0",
+    "react-icons": "4.11.0",
+    "react-quill": "2.0.0",
+    "react-router-dom": "6.17.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "3.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "nodemon backend/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "standard-jsx"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "7.22.5",
+    "@babel/plugin-transform-nullish-coalescing-operator": "7.22.11",
+    "@babel/plugin-transform-private-methods": "7.22.5",
+    "@rollup/plugin-terser": "0.4.4",
+    "standard": "17.1.0",
+    "svgo": "3.0.2",
+    "workbox-cacheable-response": "7.0.0"
+  }
+}

@@ -1,0 +1,39 @@
+### ottenere tutti i post
+GET http://localhost:3001/api/posts HTTP/1.1
+Content-Type: application/json
+
+### ottenere un post
+GET http://localhost:3001/api/posts/1 HTTP/1.1
+Content-Type: application/json
+
+### creare un nuovo post
+POST http://localhost:3001/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+  "category": "Coding",
+  "title": "Intro to NodeJS",
+  "cover": "https://miro.medium.com/max/1200/1*9QRFJrVj9VpOEk3yco6JMg.jpeg",
+    "readTime": {
+      "value": 5,
+      "unit": "minute"
+    },
+    "author": {
+      "name": "Eduardo Bianchi",
+      "avatar": "https://www.w3schools.com/howto/img_avatar.png",
+      "_id": "6536d3bda7b3529d7018fe33"
+    },
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi."
+}
+
+### eliminare un post
+DELETE http://localhost:3001/api/posts/1 HTTP/1.1
+
+
+### modificare un post
+PUT http://localhost:3001/api/posts/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  # proprietà da modificare (es. title, content, ecc...)
+}
