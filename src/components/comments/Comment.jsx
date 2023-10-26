@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 
 // Componente Comment che mostra un singolo commento
-const Comment = ({ id, postId, author, content, onDeleteComment }) => {
+const Comment = ({ id, author, content, onDeleteComment }) => {
   return (
     <div>
       <strong>User: </strong>
