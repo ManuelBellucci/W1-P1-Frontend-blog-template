@@ -12,6 +12,7 @@ const Blog = () => {
   // states
   const [blogData, setBlogData] = useState({})
   const [loading, setLoading] = useState(true)
+
   // hooks
   const params = useParams()
   const navigate = useNavigate()
@@ -40,7 +41,7 @@ const Blog = () => {
     fetchData()
   }, [params, navigate])
 
-  const handleAddComment = (newComment) => {
+  const handleAddComment = async (newComment) => {
     setBlogData((prevData) => ({
       ...prevData,
       comments: Array.isArray(prevData.comments) ? [...prevData.comments, newComment] : [newComment]
@@ -72,7 +73,7 @@ const Blog = () => {
               >
                 <BlogLike
                   defaultLikes={['123']}
-                  onChange={() => console.log('')}
+
                 />
               </div>
             </div>

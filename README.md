@@ -68,8 +68,8 @@ Sei responsabile della creazione di una WebAPI per l'applicazione Strive Blogs. 
     - []Tutti gli endpoint (tranne /login) devono essere accessibili solo tramite token
     - []Collega il tuo API al frontend
         - []Crea le pagine di registrazione e login per il progetto
-          ]  - []Dopo un login effettuato con successo, memorizza il token di accesso nel localStorage e redireziona l'utente alla homepage
-            - []Usa il token ovunque sia necessario
+        - []Dopo un login effettuato con successo, memorizza il token di accesso nel localStorage e redireziona l'utente alla homepage
+        - []Usa il token ovunque sia necessario
     - []Inserisci i seguenti endpoint:
         - []GET /login => restituisce token di accesso
         - []GET /me => restituisce l'utente collegato al token di accesso
